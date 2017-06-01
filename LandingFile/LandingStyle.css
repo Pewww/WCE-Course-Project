@@ -1,0 +1,565 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+            /* Main font: font-family: 'Open Sans', sans-serif*/
+            *{
+                margin:0;
+                padding:0;
+                border:0;
+                font-size:100%;
+                vertical-align: baseline;
+                box-sizing:border-box;
+                outline:none;
+            }
+            body{
+                width:100%;
+                height:100vh;
+                position:relative;
+                margin:0 auto;
+                min-width:1200px;
+            }
+            header{
+                width:100%;
+                height:650px;
+                background-position:center;
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                position:relative;
+            }
+            /* header */
+            #Shot1{
+                background:url(TestBackground.jpg);
+            }
+            #Shot2{
+                background:url(TestBackground2.jpg);
+            }
+            #Shot3{
+                background:url(TestBackground3.jpg);
+            }
+            header #Header_Title_Part{
+                position:relative;
+                width:100%;
+                height:100px;
+                top:30px;
+            }
+            header #Header_Title_Part #Header_Title{
+                color:white;
+                text-transform:uppercase;
+                font-family: 'Montserrat', sans-serif;
+                font-weight:bold;
+                font-size:1.9rem;
+                padding-left:16rem;
+                padding-top:1.5rem;
+/*                letter-spacing: 0;*/
+                
+            }
+            
+            header #Sub_Title_Part{
+                width:100%;
+                height:300px;
+/*
+                border-top:1px solid black;
+                border-bottom:1px solid black;
+*/
+                margin-top:150px;
+            }
+            header #Sub_Title_Part #Sub_Title1{
+                color:white;
+/*                font-family: 'Noto Sans KR', sans-serif;*/
+                font-family: 'Montserrat', sans-serif;
+                font-weight:bold;
+                font-size:2.7rem;
+                padding-left:16rem;
+                animation-name:SubTitle1;
+                animation-duration:1.25s;
+                animation-fill-mode: forwards;
+            }
+            @keyframes SubTitle1{
+                from{
+                    opacity:0;
+                    padding-left:65rem;
+                    letter-spacing:0px;
+                }
+                to{
+                    opacity:1;
+                    padding-left:16rem;
+                    letter-spacing:2px;
+                }
+            }
+            header #Sub_Title_Part #Sub_Title2{
+                color:white;
+                padding-top:20px;
+                padding-left:16rem;
+                font-family: 'Noto Sans KR', sans-serif;
+                line-height:1.75;
+                animation-name:SubTitle2;
+                animation-delay: 0.3s;
+                animation-fill-mode: backwards;
+                animation-duration:1.25s;
+                font-size:1.05rem;
+            }
+            @keyframes SubTitle2{
+                from{
+                    opacity:0;
+                    padding-left:52rem;
+                }
+                to{
+                    opacity:1;
+                    padding-left:16rem;
+                }
+            }
+            header #Header_White_Box{
+                width:66.5%;
+                height:100px;
+                background-color:floralwhite;
+                margin:0 auto;
+                z-index: 100;
+                margin-top:50px;
+                position: relative;
+                border-radius: 7.5px;
+                overflow:hidden;
+                /* 나중에 반응형 고려할 때 overflow값 변경해야됨. */
+            }
+            header #Header_White_Box .Half_Box{
+                width:calc(100%/4);
+                height:100%;
+                float:left;
+            }
+            header #Header_White_Box #Box1, #Box2{
+                background:linear-gradient(to right, floralwhite, #e6e6e6);
+            }
+            header #Header_White_Box #Box1{
+                border-radius:7.5px 0px 0px 7.5px;
+            }
+            header #Header_White_Box #Box3{
+                background:linear-gradient(to right,#34c48b,#47d57b);
+                border-radius:0px 7.5px 7.5px 0px;
+            }
+            header #Header_White_Box .Half_Box .imageCover{
+                width:64px;
+                height:64px;
+                margin-top:18px;
+                margin-left:12px;
+                float:left;
+                display: inline-block;
+            }
+            header #Header_White_Box .Half_Box #imageCover_Check{
+                position:relative;
+                width:45px;
+                height:45px;
+                float:right;
+                bottom:2.8rem;
+                right:1rem;
+            }
+            .imageCover:hover{
+                animation-name:iconMove;
+                animation-duration:0.75s;
+                animation-fill-mode: backwards;
+            }
+            @keyframes iconMove{
+                25%{
+                    transform:rotate(20deg);
+                }
+                50%{
+                    transform:rotate(-20deg);
+                }
+                75%{
+                    transform:rotate(20deg);
+                }
+                100%{
+                    transform:rotate(-20deg);
+                }
+            }
+            header #Header_White_Box .Box_Title{
+                font-family:'Noto Sans KR', sans-serif;
+                font-weight:bold;
+                text-align: center;
+                padding-top:27px;
+                font-size:0.9rem;
+                letter-spacing: 1px;
+                color:#494949;
+            }
+            header #Header_White_Box .Box_SubTitle{
+                font-family: 'Noto Sans KR', sans-serif;
+                font-weight:bold;
+                color:#b5b5b5;
+                text-align: center;
+                font-size:0.8rem;
+                letter-spacing:0.5px;
+            }
+            header #Header_White_Box .Half_Box #moreInfo{
+                color:white;
+                font-family: 'Noto Sans KR', sans-serif;
+                font-size:1.1rem;
+                padding-left:1rem;
+                padding-top:1.4rem;
+                width:140px;
+            }
+            section{
+                width:100%;
+                height:1600px;
+                position:relative;
+            }
+            section #Section_Black_Box{
+                width:100%;
+                height:100px;
+                background-color:#0e0e0e;
+            }
+            section article{
+                width:100%;
+                height:750px;
+                overflow:hidden;
+            }
+            section #Project_Explain{
+                background-color:#efefef;
+                padding-top:50px;
+            }
+            section #Project_Explain #Project_Title{
+                font-family: 'Montserrat', sans-serif;
+                font-weight:bold;
+                text-align: center;
+                font-size:2.5rem;
+                padding-top:3rem;
+                color:#333;
+            }
+            section #Project_Explain #Before_Main_Line{
+                width:200px;
+                height:20px;
+                border-top:15px solid #34c48b;
+                border-style: dotted;
+                margin:0 auto;
+                margin-top:10px;
+            }
+            section #Project_Explain #Project_Main_Content{
+                color:#474747;
+                text-align: center;
+                font-family: 'Noto Sans KR', sans-serif;
+                font-size:1.15rem;
+                line-height:2;
+                padding-top:20px;
+            }
+            section #Project_Explain #Main_Image_Cover{
+                width:100%;
+                height:290px;
+/*
+                border-top:1px solid darkgray;
+                border-bottom:1px solid darkgray;
+*/
+                margin-top:30px;
+                text-align: center;
+/*                background-color:red;*/
+            }
+            section #Project_Explain #Main_Image_Cover .Main_Image{
+                width:90px;
+                height:90px;
+                /*border:1px solid darkgray;*/
+                display:inline-block;
+                margin-top:30px;
+            }
+            section #Project_Explain #Main_Image_Cover #Main_Right_Side{
+                margin-right:250px;
+            }
+            section #Project_Explain #Main_Image_Cover #Main_Left_Side{
+                margin-left:250px;
+            }
+            section .Main_Image .Main_Image_Size{
+                width:100%;
+                height:100%;
+             }
+            section .Main_Image .Main_Image_Title{
+                font-family: 'Noto Sans KR', sans-serif;
+                font-weight:bold;
+                display:block;
+                padding-top:5px;
+            }
+            section #Project_Explain #Main_Image_Cover #MI_Title_Ex{
+                width:100%;
+                height:140px;
+/*                background-color:green;*/
+            }
+            #Main_Image_Cover #MI_Title_Ex .Ex_Seperate_Box{
+                width:250px;
+                height:120px;
+/*                background-color:blue;*/
+                display:inline-block;
+                margin-top:10px;
+                font-family: 'Noto Sans KR', sans-serif;
+                font-size:0.9rem;
+                line-height:1.75;
+                text-align: left;
+            }
+            section #Before_Project{
+               background-color:#6c6abd;
+            }
+            section article #Article2_Title{
+                font-family: 'Montserrat', sans-serif;
+                font-weight:bold;
+                text-transform: uppercase;
+                color:floralwhite;
+                font-size:2.35rem;
+                padding-top:50px;
+                padding-left:17.5rem;
+            }
+            section article #Article2_SubTitle{
+                color:#cbc3d8;
+                font-family: 'Noto Sans KR', sans-serif;
+                font-size:0.85rem;
+                letter-spacing:0.5px;
+                padding-left:17.5rem;
+                padding-top:5px;
+            }
+            section article .MemberPic1{
+                width:41.25%;
+                height:285px;
+                border:1px solid floralwhite;               
+                margin-top:20px;
+                margin-left:30px;
+            }
+            section article #MemberPic2{
+                width:53.34%;
+                height:590px;
+                border:1px solid floralwhite;
+                float:right;
+                position:relative;
+                bottom:590px;
+                margin-right:32.5px;                    
+                overflow:hidden;
+            }
+            section article .MemberPic1 .mempicSize{
+                 width:100%;
+                 height:100%;
+                 background-position: center;
+                 background-size:100%;
+            }
+            footer article{
+                width:100%;
+                height:900px;
+                background-color:#38D5AE;
+                position:relative;
+            }
+            footer article #Programmer_Intro{
+                color:white;
+                text-transform:uppercase;
+                font-family: 'Montserrat', sans-serif;
+                font-weight:bold;
+                font-size:2.35rem;
+                text-align:center;
+                letter-spacing:2px;
+                padding-top:40px;
+            }
+            footer article #Programmer_SubIntro{
+                color:floralwhite;
+                text-align:center;
+                font-family: 'Noto Sans KR', sans-serif;
+                font-weight: bold;
+                letter-spacing:2px;
+                font-size:0.8rem;
+            }
+/*
+            footer article .MembersCover{
+                width:80%;
+                height:200px;
+                border:2px solid white;
+                text-align: center;
+                overflow: hidden;
+                margin:0 auto;
+                position:relative;
+                margin-top:20px;
+                background-color:white;
+            }
+            footer article .MembersCover #ThirdGrade{
+                width:200px;
+                height:100%;
+                border:2px solid white;
+                margin:0 auto;
+            }
+            footer article .MembersCover .SecondAndFirst{
+                width:200px;
+                height:90%;
+                border:2px solid white;
+                display:inline-block;
+                margin:10px;
+            }
+*/
+            footer article .MemberPicCover{
+                width:1200px;
+                height:225px;
+/*                border:2px solid white;*/
+                margin:0 auto;
+                margin-top:25px;
+                text-align: center;
+                
+            }
+            footer article .MemberPicCover .MemberPics{
+                width:225px;
+                height:100%;
+                display:inline-block;
+                cursor:pointer;
+            }
+            footer article .MemberPics .RealMemPic{
+                width:100%;
+                height:81.5%;
+                /*background:url(최지헌.jpg);*/
+                background-position: center;
+            }
+            footer article .MemberPics .PicsWhiteCover{         
+                width:100%;
+                height:18.5%;
+                background-color:floralwhite;
+            }
+            footer article .HoverCover{
+                width:100%;
+                height:100%;
+                background-color:rgba(0,0,0,0.75);
+                z-index:100;
+                position:relative;
+                margin-top:-225px;
+                opacity:0.000001;
+                display:table;
+            }
+            footer article .HoverCover:hover{
+                animation-name:PicCover;
+                animation-duration:1.5s;
+                animation-fill-mode: forwards;
+            }
+            @keyframes PicCover{
+                from{
+                    opacity:0;
+                }
+                to{
+                    opacity:1;
+                }
+            }
+            footer article .HoverCover .HoverExplain{
+                color:white;
+                font-family: 'Noto Sans KR', sans-serif;
+                font-size:1.1rem;
+                display:table-cell;
+                vertical-align: bottom;
+                opacity:0.00000001;
+                position:relative;
+                line-height:1.75;
+            }
+            footer article .HoverExplain:hover{
+                animation-name:HoverEx;
+                animation-duration:1s;
+                animation-delay: 0.15s;
+                animation-fill-mode: forwards;
+            }
+            @keyframes HoverEx{
+                from{
+                    opacity:0;
+                    bottom:0px;
+                }
+                to{
+                    opacity:1;
+                    bottom:51.5px;
+                }
+            }
+            footer article .PicsWhiteCover .ProgrammerName{
+                color:#242424;
+                font-family: 'Noto Sans KR', sans-serif;
+                font-weight: bold;
+                font-size:0.8rem;
+                letter-spacing:1px;
+                position: relative;
+                top:7.8px;
+                right:2.5rem;
+            }
+            footer article .ProgrammerName .NamePlus{
+                font-family: 'Montserrat', sans-serif;
+                font-weight:bold;
+                font-size:0.7rem;
+                color:#bfbfbf;
+            }
+            footer article .MemberPicCover #PicsLeftSide{
+                margin-right:150px;
+            }
+            footer article .MemberPicCover #PicsRightSide{
+                margin-left:150px;
+            }
+            footer aside{
+                width:100%;
+                height:375px;
+                background-color:#242729;
+            }
+            footer aside #Footer_Title{
+                color:white;
+                font-family: 'Montserrat', sans-serif;
+                font-weight:bold;
+                text-align: center;
+                font-size:1.2rem;
+                padding-top:20px;
+            }
+            footer aside #Footer_SubTitle{
+                color:white;
+                font-size:0.8rem;
+                font-weight:bold;
+                letter-spacing:0px;
+                text-align:center;
+                margin-top:10px;
+            }
+            footer aside #Footer_Image_Cover{
+                width:45px;
+                height:45px;
+                border:2px solid white;
+                border-radius: 100%;
+                margin:0 auto;
+                margin-top:20px;
+            }
+            footer aside #Footer_Seperate{
+                width:100%;
+                height:200px;
+/*                border:1px solid white;*/
+                margin-top:30px;
+                text-align: center;
+            }
+/*
+            footer aside #Footer_Seperate .Footer_Sections{
+                width:250px;
+                height:100%;
+                display:inline-block;
+            }
+            footer aside #Footer_Seperate ul{
+                overflow:hidden;
+            }
+            footer aside #Footer_Seperate li{
+                color:#6d7f80;
+                list-style: none;
+                font-size:0.8rem;
+                font-family: 'Montserrat';
+                letter-spacing:1px;
+                line-height:1.5;
+            }
+*/
+            footer aside #programmers{
+                color:white;
+                font-family: 'Montserrat', sans-serif;
+                font-weight:bold;
+            }
+            footer table{
+                margin: 0 auto;
+                border-collapse:collapse;
+                width:450px;
+                height:100px;
+                margin-top:10px;
+                text-align: center;
+            }
+            footer table tr td{
+                color:#6f8283;
+                padding-right:18.75px;
+                letter-spacing:1px;
+                font-size:0.9rem;
+                
+            }
+            footer aside #Footer_Line{
+                width:150px;
+                height:1px;
+                background-color:#5e6f70;
+                margin:0 auto;
+                margin-top:12.5px;
+            }
+            footer aside #Footer_Last{
+                font-size:0.75rem;
+                color:#687a7b;
+                margin-top:15.5px;
+                letter-spacing:0.5px;
+            }
