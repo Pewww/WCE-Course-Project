@@ -1,28 +1,47 @@
 <!DOCTYPE html>
 <html>
-    <head>
-<!--        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">-->
-        <title>LandingPage</title>
-        <meta charset="utf-8">
-        <meta name="author" content="WCE_Members">
-        <meta name="title" content="WCE:Web-Coding-Everyday">
-        <meta name="description" content="DSM No.1 웹 동아리">
-        <meta name="keywords" content="웹, Web, 프론트엔트, 백엔드">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta property="og:site_name" content="WCE-Page">
-        <meta property="og:title" content="DSM No.1 웹 동아리">
-        <meta property="og:description" content="사람들에게 진로에 대한 정보를 제공해주고 대학 입시와 관련된 기능을 제공하는 웹사이트입니다.">
-        <!-- meta 내의 값들은 알아서 바꾸기 -->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
-        <link href="LandingStyle.css" rel="stylesheet">
-<!--
+
+<head>
+    <!--        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">-->
+    <title>LandingPage</title>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="./jquery.bxslider.min.js"></script>
+    <meta name="author" content="WCE_Members">
+    <meta name="title" content="WCE:Web-Coding-Everyday">
+    <meta name="description" content="DSM No.1 웹 동아리">
+    <meta name="keywords" content="웹, Web, 프론트엔트, 백엔드">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="og:site_name" content="WCE-Page">
+    <meta property="og:title" content="DSM No.1 웹 동아리">
+    <link rel="stylesheet" href="LandingStyle.css">
+    <meta property="og:description" content="사람들에게 진로에 대한 정보를 제공해주고 대학 입시와 관련된 기능을 제공하는 웹사이트입니다.">
+    <!-- meta 내의 값들은 알아서 바꾸기 -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+    <link href="LandingStyle.css" rel="stylesheet">
+    <!--
         <style media="screen" type="text/css">
-            
+
         </style>
 -->
-    </head>
-    <body>
-        <header id="Shot1"> <!-- 슬라이드 고려 header id값 부여 -->
+    <script>
+        $(document).ready(function() {
+            $(".slide").bxSlider({
+                options: 'horizontal',
+                speed: 3000,
+                auto: true,
+                controls: false,
+                autoHover:false,
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="slide">
+        <header id="Shot1">
+            <!-- 슬라이드 고려 header id값 부여 -->
             <div id="Header_Title_Part">
                 <div id="Header_Title">
                     web coding everyday
@@ -71,7 +90,7 @@
                     </div>
                 </div>
                 <div class="Half_Box" id="Box3">
-                    
+
                     <div id="moreInfo">
                         동아리에 대해<br>더 알고 싶다면?
                     </div>
@@ -82,7 +101,8 @@
                 </div>
             </div>
         </header>
-        <header id="Shot2"> <!-- 슬라이드 고려 header id값 부여 -->
+        <header id="Shot2">
+            <!-- 슬라이드 고려 header id값 부여 -->
             <div id="Header_Title_Part">
                 <div id="Header_Title">
                     web coding everyday
@@ -131,7 +151,7 @@
                     </div>
                 </div>
                 <div class="Half_Box" id="Box3">
-                    
+
                     <div id="moreInfo">
                         동아리에 대해<br>더 알고 싶다면?
                     </div>
@@ -142,7 +162,8 @@
                 </div>
             </div>
         </header>
-        <header id="Shot3"> <!-- 슬라이드 고려 header id값 부여 -->
+        <header id="Shot3">
+            <!-- 슬라이드 고려 header id값 부여 -->
             <div id="Header_Title_Part">
                 <div id="Header_Title">
                     web coding everyday
@@ -191,7 +212,7 @@
                     </div>
                 </div>
                 <div class="Half_Box" id="Box3">
-                    
+
                     <div id="moreInfo">
                         동아리에 대해<br>더 알고 싶다면?
                     </div>
@@ -202,84 +223,82 @@
                 </div>
             </div>
         </header>
-        
-        <section>
-            <div id="Section_Black_Box"></div>
-            <article id="Project_Explain">
-                <div id="Project_Title">
-                    PRO-COURSE
-                </div>
-                <div id="Before_Main_Line"></div>
-                
-                <div id="Project_Main_Content">
-                    이번 저희 동아리에서 기획하는 프로젝트는 바로 사람들의 <span style="font-weight:bold;">진로</span>
-                    를 알려줄 수 있는 
-                    <span style="font-weight:bold;">웹서비스</span>
-                    입니다.<br>검증된 질문 정보들을 바탕으로 사람들이 어떠한 것에 관심이 있고, 무엇을 원하는지 알려줄 수 있으며,<br><span style="font-weight:bold;">오픈 커뮤니티 기능</span>
-                    으로 진로에 관한 질문들을 서로 묻고 답할 수 있다는 것이 프로젝트의 <br>가장 큰 특징이라고 할 수 있습니다.
-                </div>
-                
-                <div id="Main_Image_Cover">
-                    <div class="Main_Image" id="Main_Right_Side">
-                        <img src="school.png" class="Main_Image_Size">
-                        <span class="Main_Image_Title">
+    </div>
+    <section>
+        <div id="Section_Black_Box"></div>
+        <article id="Project_Explain">
+            <div id="Project_Title">
+                PRO-COURSE
+            </div>
+            <div id="Before_Main_Line"></div>
+
+            <div id="Project_Main_Content">
+                이번 저희 동아리에서 기획하는 프로젝트는 바로 사람들의 <span style="font-weight:bold;">진로</span> 를 알려줄 수 있는
+                <span style="font-weight:bold;">웹서비스</span> 입니다.
+                <br>검증된 질문 정보들을 바탕으로 사람들이 어떠한 것에 관심이 있고, 무엇을 원하는지 알려줄 수 있으며,<br><span style="font-weight:bold;">오픈 커뮤니티 기능</span> 으로 진로에 관한 질문들을 서로 묻고 답할 수 있다는 것이 프로젝트의 <br>가장 큰 특징이라고 할 수 있습니다.
+            </div>
+
+            <div id="Main_Image_Cover">
+                <div class="Main_Image" id="Main_Right_Side">
+                    <img src="school.png" class="Main_Image_Size">
+                    <span class="Main_Image_Title">
                             학교 정보
                         </span>
-                    </div>
-                    <div class="Main_Image">
-                        <img src="course.png"  class="Main_Image_Size">
-                        <span class="Main_Image_Title">
+                </div>
+                <div class="Main_Image">
+                    <img src="course.png" class="Main_Image_Size">
+                    <span class="Main_Image_Title">
                             진로 찾기
                         </span>
-                    </div>
-                    <div class="Main_Image" id="Main_Left_Side">
-                        <img src="sns.png" class="Main_Image_Size">
-                        <span class="Main_Image_Title">
+                </div>
+                <div class="Main_Image" id="Main_Left_Side">
+                    <img src="sns.png" class="Main_Image_Size">
+                    <span class="Main_Image_Title">
                             정보 공유
                         </span>
+                </div>
+                <div id="MI_Title_Ex">
+                    <div class="Ex_Seperate_Box" style="margin-right:90px;">
+                        자신의 내신 및 수능 성적을 바탕으로 어떤 대학교에 갈 수 있는지 알려주고 그 대학에 대한 정보를 자세히 알려줍니다.
                     </div>
-                    <div id="MI_Title_Ex">
-                        <div class="Ex_Seperate_Box" style="margin-right:90px;">
-                            자신의 내신 및 수능 성적을 바탕으로 어떤 대학교에 갈 수 있는지 알려주고 그 대학에 대한 정보를 자세히 알려줍니다.
-                        </div>
-                        <div class="Ex_Seperate_Box">
-                            검증된 질문들을 바탕으로 사용자가 어떠한 적성을 가지고 있고 무엇을 하길 원하는지 알려주는 '진로 길잡이' 역할을 합니다.
-                        </div>
-                        <div class="Ex_Seperate_Box" style="margin-left:90px;">
-                            자신의 적성 결과를 SNS를 통하여 다른 사람들과 공유할 수 있으며, 비슷한 적성을 가진 사람들과 소통할 수 있습니다.
-                        </div>
+                    <div class="Ex_Seperate_Box">
+                        검증된 질문들을 바탕으로 사용자가 어떠한 적성을 가지고 있고 무엇을 하길 원하는지 알려주는 '진로 길잡이' 역할을 합니다.
+                    </div>
+                    <div class="Ex_Seperate_Box" style="margin-left:90px;">
+                        자신의 적성 결과를 SNS를 통하여 다른 사람들과 공유할 수 있으며, 비슷한 적성을 가진 사람들과 소통할 수 있습니다.
                     </div>
                 </div>
-            </article>
-            
-            <article id="Before_Project">
-                <div id="Article2_Title">
-                    wce activities in 2017
-                </div>
-                <div id="Article2_SubTitle">
-                    2017년, 동아리가 개설되고 난 후 했던 활동 사진들을 모아놓은 공간입니다.
-                </div>
-                <div class="MemberPic1">
-                    <img src="membersPic1.jpg" class="mempicSize">
-                </div>
-                <div class="MemberPic1">
-                    <img src="membersPic2.jpg" class="mempicSize">
-                </div>
-                <div id="MemberPic2">
-                    <img src="membersPic3.jpg" style="width:100%;height:100%">
-                </div>
-            </article>
-        </section>
-        
-        <footer>
-            <article>
-                <div id="Programmer_Intro">
-                    club members
-                </div>
-                <div id="Programmer_SubIntro">
-                    WCE 동아리 멤버들을 소개합니다!
-                </div>
-<!--
+            </div>
+        </article>
+
+        <article id="Before_Project">
+            <div id="Article2_Title">
+                wce activities in 2017
+            </div>
+            <div id="Article2_SubTitle">
+                2017년, 동아리가 개설되고 난 후 했던 활동 사진들을 모아놓은 공간입니다.
+            </div>
+            <div class="MemberPic1">
+                <img src="membersPic1.jpg" class="mempicSize">
+            </div>
+            <div class="MemberPic1">
+                <img src="membersPic2.jpg" class="mempicSize">
+            </div>
+            <div id="MemberPic2">
+                <img src="membersPic3.jpg" style="width:100%;height:100%">
+            </div>
+        </article>
+    </section>
+
+    <footer>
+        <article>
+            <div id="Programmer_Intro">
+                club members
+            </div>
+            <div id="Programmer_SubIntro">
+                WCE 동아리 멤버들을 소개합니다!
+            </div>
+            <!--
                 <div class="MembersCover">
                     <div id="ThirdGrade">
                         <img src="KingGotTop.jpg" style="width:100%;height:100%;">
@@ -314,225 +333,189 @@
                     </div>
                 </div>
 -->
-                <div class="MemberPicCover">
-                    <div class="MemberPics" id="PicsLeftSide">
-                        
-                        <div class="RealMemPic">
-                            <img src="문진호.png"
-                                 style="width:100%;height:100%;">
-                        </div>
-                        <div class="PicsWhiteCover">
-                            <span class="ProgrammerName">
-                                문진호 - 
+            <div class="MemberPicCover">
+                <div class="MemberPics" id="PicsLeftSide">
+
+                    <div class="RealMemPic">
+                        <img src="문진호.png" style="width:100%;height:100%;">
+                    </div>
+                    <div class="PicsWhiteCover">
+                        <span class="ProgrammerName">
+                                문진호 -
                                 <span class="NamePlus">
                                     3rd Grade
                                 </span>
-                            </span>
-                        </div>
-                        <div class="HoverCover">
-                            <div class="HoverExplain">
-                                -문진호-<br>
-                                단 한명의 3학년 학생이다.<br>
-                                게임 개발을 사랑하며,<br>
-                                c#과 연애중이다.
-                            </div>
+                        </span>
+                    </div>
+                    <div class="HoverCover">
+                        <div class="HoverExplain">
+                            -문진호-<br> 단 한명의 3학년 학생이다.<br> 게임 개발을 사랑하며,<br> c#과 연애중이다.
                         </div>
                     </div>
-                    <div class="MemberPics">
-                        <div class="RealMemPic">
-                            <img src="최지헌.jpg"
-                                 style="width:100%;height:100%;">
-                        </div>
-                        <div class="PicsWhiteCover">
-                            <span class="ProgrammerName">
+                </div>
+                <div class="MemberPics">
+                    <div class="RealMemPic">
+                        <img src="최지헌.jpg" style="width:100%;height:100%;">
+                    </div>
+                    <div class="PicsWhiteCover">
+                        <span class="ProgrammerName">
                                 최지헌 -
                                 <span class="NamePlus">
                                     2nd Grade
                                 </span>
-                            </span>
-                        </div>
-                        <div class="HoverCover">
-                            <div class="HoverExplain">
-                                -최지헌-<br>
-                                WCE 동아리의 부장이다.<br>
-                                백엔드 개발을 하며,<br>
-                                허갤이라는 별명이 있다.
-                            </div>    
+                        </span>
+                    </div>
+                    <div class="HoverCover">
+                        <div class="HoverExplain">
+                            -최지헌-<br> WCE 동아리의 부장이다.<br> 백엔드 개발을 하며,<br> 허갤이라는 별명이 있다.
                         </div>
                     </div>
-                    <div class="MemberPics" id="PicsRightSide">
-                        <div class="RealMemPic">
-                            <img src="이동현.jpg"
-                                 style="width:100%;height:100%;">
-                        </div>
-                        <div class="PicsWhiteCover">
-                            <span class="ProgrammerName">
+                </div>
+                <div class="MemberPics" id="PicsRightSide">
+                    <div class="RealMemPic">
+                        <img src="이동현.jpg" style="width:100%;height:100%;">
+                    </div>
+                    <div class="PicsWhiteCover">
+                        <span class="ProgrammerName">
                                 이동현 -
                                 <span class="NamePlus">
                                     2nd Grade
                                 </span>
-                            </span>
-                        </div>
-                        <div class="HoverCover">
-                            <div class="HoverExplain">
-                                -이동현-<br>
-                                여친이 21명인 친구이다.<br>
-                                백엔드 개발을 담당하고 있고,<br>
-                                프론트쪽도 좋아한다.
-                            </div>    
+                        </span>
+                    </div>
+                    <div class="HoverCover">
+                        <div class="HoverExplain">
+                            -이동현-<br> 여친이 21명인 친구이다.<br> 백엔드 개발을 담당하고 있고,<br> 프론트쪽도 좋아한다.
                         </div>
                     </div>
                 </div>
-                <div class="MemberPicCover">
-                    <div class="MemberPics" id="PicsLeftSide">
-                        <div class="RealMemPic">
-                            <img src="정윤재.png"
-                                 style="width:100%;height:100%;">
-                        </div>
-                        <div class="PicsWhiteCover">
-                            <span class="ProgrammerName">
+            </div>
+            <div class="MemberPicCover">
+                <div class="MemberPics" id="PicsLeftSide">
+                    <div class="RealMemPic">
+                        <img src="정윤재.png" style="width:100%;height:100%;">
+                    </div>
+                    <div class="PicsWhiteCover">
+                        <span class="ProgrammerName">
                                 정윤재 -
                                 <span class="NamePlus">
                                     2nd Grade
                                 </span>
-                            </span>
-                        </div>
-                        <div class="HoverCover">
-                            <div class="HoverExplain">
-                                -정윤재-<br>
-                                아주 착하고 바른 학생이다.<br>
-                                프론트 개발을 담당하고 있고,<br>
-                                JS를 좋아한다.
-                            </div>    
+                        </span>
+                    </div>
+                    <div class="HoverCover">
+                        <div class="HoverExplain">
+                            -정윤재-<br> 아주 착하고 바른 학생이다.<br> 프론트 개발을 담당하고 있고,<br> JS를 좋아한다.
                         </div>
                     </div>
-                    <div class="MemberPics">
-                        <div class="RealMemPic">
-                            <img src="조치원.png"
-                            style="width:100%;height:100%;">
-                        </div>
-                        <div class="PicsWhiteCover">
-                            <span class="ProgrammerName">
+                </div>
+                <div class="MemberPics">
+                    <div class="RealMemPic">
+                        <img src="조치원.png" style="width:100%;height:100%;">
+                    </div>
+                    <div class="PicsWhiteCover">
+                        <span class="ProgrammerName">
                                 조치원 -
                                 <span class="NamePlus">
                                     2nd Grade
                                 </span>
-                            </span>
-                        </div>
-                        <div class="HoverCover">
-                            <div class="HoverExplain">
-                                -조치원-<br>
-                                유일하게 연애중이다.<br>
-                                백엔드 개발을 담당하고 있고,<br>
-                                서버를 좋아한다.
-                            </div>    
+                        </span>
+                    </div>
+                    <div class="HoverCover">
+                        <div class="HoverExplain">
+                            -조치원-<br> 유일하게 연애중이다.<br> 백엔드 개발을 담당하고 있고,<br> 서버를 좋아한다.
                         </div>
                     </div>
-                    <div class="MemberPics" id="PicsRightSide">
-                        <div class="RealMemPic">
-                            <img src="윤효상.png"
-                                 style="width:100%;height:100%;">
-                        </div>
-                        <div class="PicsWhiteCover">
-                            <span class="ProgrammerName">
+                </div>
+                <div class="MemberPics" id="PicsRightSide">
+                    <div class="RealMemPic">
+                        <img src="윤효상.png" style="width:100%;height:100%;">
+                    </div>
+                    <div class="PicsWhiteCover">
+                        <span class="ProgrammerName">
                                 윤효상 -
                                 <span class="NamePlus">
                                     1st Grade
                                 </span>
-                            </span>
-                        </div>
-                        <div class="HoverCover">
-                            <div class="HoverExplain">
-                                -윤효상-<br>
-                                힘이 세지만 귀여운 친구이다.<br>
-                                프론트를 공부하고 있으며,<br>
-                                백엔드도 열심히 습득 중이다.
-                            </div>    
+                        </span>
+                    </div>
+                    <div class="HoverCover">
+                        <div class="HoverExplain">
+                            -윤효상-<br> 힘이 세지만 귀여운 친구이다.<br> 프론트를 공부하고 있으며,<br> 백엔드도 열심히 습득 중이다.
                         </div>
                     </div>
                 </div>
-                <div class="MemberPicCover">
-                    <div class="MemberPics" id="PicsLeftSide">
-                        <div class="RealMemPic">
-                            <img src="이주영 임시.png"
-                                 style="width:100%;height:100%;">
-                        </div>
-                        <div class="PicsWhiteCover">
-                            <span class="ProgrammerName">
+            </div>
+            <div class="MemberPicCover">
+                <div class="MemberPics" id="PicsLeftSide">
+                    <div class="RealMemPic">
+                        <img src="이주영 임시.png" style="width:100%;height:100%;">
+                    </div>
+                    <div class="PicsWhiteCover">
+                        <span class="ProgrammerName">
                                 이주영 -
                                 <span class="NamePlus">
                                     1st Grade
                                 </span>
-                            </span>
-                        </div>
-                        <div class="HoverCover">
-                            <div class="HoverExplain">
-                                -이주영-<br>
-                                동아리 내의 유일한 여자이다.<br>
-                                디자인을 잘하며,<br>
-                                포토샵을 매일 가지고 논다.
-                            </div>    
+                        </span>
+                    </div>
+                    <div class="HoverCover">
+                        <div class="HoverExplain">
+                            -이주영-<br> 동아리 내의 유일한 여자이다.<br> 디자인을 잘하며,<br> 포토샵을 매일 가지고 논다.
                         </div>
                     </div>
-                    <div class="MemberPics">
-                        <div class="RealMemPic">
-                            <img src="연준모.png"
-                                 style="width:100%;height:100%;">
-                        </div>
-                        <div class="PicsWhiteCover">
-                            <span class="ProgrammerName">
+                </div>
+                <div class="MemberPics">
+                    <div class="RealMemPic">
+                        <img src="연준모.png" style="width:100%;height:100%;">
+                    </div>
+                    <div class="PicsWhiteCover">
+                        <span class="ProgrammerName">
                                 연준모 -
                                 <span class="NamePlus">
                                     1st Grade
                                 </span>
-                            </span>
-                        </div>
-                        <div class="HoverCover">
-                            <div class="HoverExplain">
-                                -연준모-<br>
-                                여심을 사로잡는 학생이다.<br>
-                                프론트 공부를 하고 있으며,<br>
-                                동아리 페이지를 구상중이다.
-                            </div>    
+                        </span>
+                    </div>
+                    <div class="HoverCover">
+                        <div class="HoverExplain">
+                            -연준모-<br> 여심을 사로잡는 학생이다.<br> 프론트 공부를 하고 있으며,<br> 동아리 페이지를 구상중이다.
                         </div>
                     </div>
-                    <div class="MemberPics" id="PicsRightSide">
-                        <div class="RealMemPic">
-                            <img src="최도영.png"
-                                 style="width:100%;height:100%;">
-                        </div>
-                        <div class="PicsWhiteCover">
-                            <span class="ProgrammerName">
+                </div>
+                <div class="MemberPics" id="PicsRightSide">
+                    <div class="RealMemPic">
+                        <img src="최도영.png" style="width:100%;height:100%;">
+                    </div>
+                    <div class="PicsWhiteCover">
+                        <span class="ProgrammerName">
                                 최도영 -
                                 <span class="NamePlus">
                                     1st Grade
                                 </span>
-                            </span>
-                        </div>
-                        <div class="HoverCover">
-                            <div class="HoverExplain">
-                                -최도영-<br>
-                                시크한 매력의 소유자이다.<br>
-                                코딩하는 것을 좋아하며,<br>
-                                백엔드 공부를 하고 있다.
-                            </div>    
+                        </span>
+                    </div>
+                    <div class="HoverCover">
+                        <div class="HoverExplain">
+                            -최도영-<br> 시크한 매력의 소유자이다.<br> 코딩하는 것을 좋아하며,<br> 백엔드 공부를 하고 있다.
                         </div>
                     </div>
                 </div>
-            </article>
-            <aside>
-                <div id="Footer_Title">
-                    WEB CODING EVERYDAY
-                </div>
-                <div id="Footer_SubTitle">
-                    Terms &#8226; conditions &#8226; Privacy policy &#8226; Copyrights Notification
-                </div>
-                <div id="Footer_Image_Cover">
-                    <a href="https://www.facebook.com/webcodingeveryday/" target="_blank"><img src="sns.png" style="width:100%;"></a> 
-                    <!-- 나중에 우리 동아리 페이지로 이동하도록 -->
-                </div>
-                <div id="Footer_Seperate">
-<!--
+            </div>
+        </article>
+        <aside>
+            <div id="Footer_Title">
+                WEB CODING EVERYDAY
+            </div>
+            <div id="Footer_SubTitle">
+                Terms &#8226; conditions &#8226; Privacy policy &#8226; Copyrights Notification
+            </div>
+            <div id="Footer_Image_Cover">
+                <a href="https://www.facebook.com/webcodingeveryday/" target="_blank"><img src="sns.png" style="width:100%;"></a>
+                <!-- 나중에 우리 동아리 페이지로 이동하도록 -->
+            </div>
+            <div id="Footer_Seperate">
+                <!--
                     <div class="Footer_Sections" style="margin-right:75px;">
                         <ul>
                             <li style="color:white;
@@ -561,36 +544,35 @@
                         </ul>
                     </div>
 -->
-                    <div id="programmers">
-                        PROGRAMMERS
-                    </div>
-                    <table>
-                        <tr>
-                            <td>Mun JInHo</td>
-                            <td>ChoI JIHeon</td>
-                            <td>Jung YunJae</td>
-                        </tr>
-                        <tr>
-                            <td>Lee DongHyun</td>
-                            <td>Jo ChIWon</td>
-                            <td>Yun HyoSang</td>
-                        </tr>
-                        <tr>
-                            <td>ChoI DoYeong</td>
-                            <td>Lee JuYeong </td>
-                            <td>Yeon JunMo</td>
-                        </tr>
-                    </table>
-                    <div id="Footer_Line"></div>
-                    <div id="Footer_Last">
-                        This project is designed by 
-                        <span style="color:#9be50e;">JYJ</span>.<br>
-                        ©2017 Landing Resources 
-                        <span style="color:#9be50e;">W.C.E.</span>
-                        All rights reserved.
-                    </div>
+                <div id="programmers">
+                    PROGRAMMERS
                 </div>
-            </aside>
-        </footer>
-    </body>
+                <table>
+                    <tr>
+                        <td>Mun JInHo</td>
+                        <td>ChoI JIHeon</td>
+                        <td>Jung YunJae</td>
+                    </tr>
+                    <tr>
+                        <td>Lee DongHyun</td>
+                        <td>Jo ChIWon</td>
+                        <td>Yun HyoSang</td>
+                    </tr>
+                    <tr>
+                        <td>ChoI DoYeong</td>
+                        <td>Lee JuYeong </td>
+                        <td>Yeon JunMo</td>
+                    </tr>
+                </table>
+                <div id="Footer_Line"></div>
+                <div id="Footer_Last">
+                    This project is designed by
+                    <span style="color:#9be50e;">JYJ</span>.<br> ©2017 Landing Resources
+                    <span style="color:#9be50e;">W.C.E.</span> All rights reserved.
+                </div>
+            </div>
+        </aside>
+    </footer>
+</body>
+
 </html>

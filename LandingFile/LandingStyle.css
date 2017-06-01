@@ -20,19 +20,22 @@
                 width:100%;
                 height:650px;
                 background-position:center;
-                background-attachment: fixed;
+                
                 background-repeat: no-repeat;
                 position:relative;
             }
             /* header */
             #Shot1{
                 background:url(TestBackground.jpg);
+                height:100%;
             }
             #Shot2{
                 background:url(TestBackground2.jpg);
+                height:100%;
             }
             #Shot3{
                 background:url(TestBackground3.jpg);
+                height:100%;
             }
             header #Header_Title_Part{
                 position:relative;
@@ -49,9 +52,9 @@
                 padding-left:16rem;
                 padding-top:1.5rem;
 /*                letter-spacing: 0;*/
-                
+
             }
-            
+
             header #Sub_Title_Part{
                 width:100%;
                 height:300px;
@@ -111,7 +114,7 @@
                 height:100px;
                 background-color:floralwhite;
                 margin:0 auto;
-                z-index: 100;
+                z-index: 9000;
                 margin-top:50px;
                 position: relative;
                 border-radius: 7.5px;
@@ -200,8 +203,9 @@
             }
             section #Section_Black_Box{
                 width:100%;
-                height:100px;
+                height:50px;
                 background-color:#0e0e0e;
+                z-index: 1;
             }
             section article{
                 width:100%;
@@ -309,7 +313,7 @@
             section article .MemberPic1{
                 width:41.25%;
                 height:285px;
-                border:1px solid floralwhite;               
+                border:1px solid floralwhite;
                 margin-top:20px;
                 margin-left:30px;
             }
@@ -320,7 +324,7 @@
                 float:right;
                 position:relative;
                 bottom:590px;
-                margin-right:32.5px;                    
+                margin-right:32.5px;
                 overflow:hidden;
             }
             section article .MemberPic1 .mempicSize{
@@ -386,7 +390,7 @@
                 margin:0 auto;
                 margin-top:25px;
                 text-align: center;
-                
+
             }
             footer article .MemberPicCover .MemberPics{
                 width:225px;
@@ -400,7 +404,7 @@
                 /*background:url(최지헌.jpg);*/
                 background-position: center;
             }
-            footer article .MemberPics .PicsWhiteCover{         
+            footer article .MemberPics .PicsWhiteCover{
                 width:100%;
                 height:18.5%;
                 background-color:floralwhite;
@@ -548,7 +552,7 @@
                 padding-right:18.75px;
                 letter-spacing:1px;
                 font-size:0.9rem;
-                
+
             }
             footer aside #Footer_Line{
                 width:150px;
